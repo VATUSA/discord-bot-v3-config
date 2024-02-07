@@ -1,0 +1,196 @@
+id: 506652179743113236
+name: ZAB
+active: true
+description: Albuquerque ARTCC
+facility: ZAB
+name_format_type: first_last
+title_type: local
+roles:
+  - id: 506654977838809088
+    name: Air Traffic Manager
+    criteria:
+      - conditions:
+        - type: facility_role
+          value: ZAB:ATM
+  - id: 506655084009226271
+    name: Deputy Air Traffic Manager
+    criteria:
+      - conditions:
+        - type: facility_role
+          value: ZAB:DATM
+  - id: 506655134273765388
+    name: Training Administrator
+    criteria:
+      - conditions:
+        - type: facility_role
+          value: ZAB:TA
+  - id: 506655166871633940
+    name: Events Coordinator
+    criteria:
+      - conditions:
+        - type: facility_role
+          value: ZAB:EC
+  - id: 506655191450386462
+    name: Webmaster
+    criteria:
+      - conditions:
+        - type: facility_role
+          value: ZAB:WM
+  - id: 506655243442847754
+    name: Facility Engineer
+    criteria:
+      - conditions:
+        - type: facility_role
+          value: ZAB:FE
+  - id: 506655401857515520
+    name: Mentor
+    criteria:
+      - conditions:
+        - type: role
+          value: MTR
+        - type: home
+          value: ZAB
+  - id: 980525829555621958
+    name: Instructor
+    criteria:
+      - conditions:
+        - type: rating
+          value: I1
+        - type: home
+          value: ZAB
+      - conditions:
+        - type: facility_role
+          value: ZAB:TA
+      - conditions:
+        - type: facility_role
+          value: ZAB:INS
+  - id: 809905284277207050
+    name: Senior Controller
+    criteria:
+      - conditions:
+        - type: rating
+          value: C3
+        - type: home
+          value: ZAB
+  - id: 506655416697094145
+    name: Controller
+    criteria:
+      - conditions:
+        - type: rating
+          value: C1
+        - type: home
+          value: ZAB
+  - id: 506655421692641291
+    name: Senior Student
+    criteria:
+      - conditions:
+        - type: rating
+          value: S3
+        - type: home
+          value: ZAB
+  - id: 506655484359475200
+    name: Student 2
+    criteria:
+      - conditions:
+        - type: rating
+          value: S2
+        - type: home
+          value: ZAB
+  - id: 506655507591725057
+    name: Student 1
+    criteria:
+      - conditions:
+        - type: rating
+          value: S1
+        - type: home
+          value: ZAB
+  - id: 506655521999159306
+    name: Observer
+    criteria:
+      - conditions:
+        - type: rating
+          value: OBS
+        - type: home
+          value: ZAB
+  - id: 980527733710921758
+    name: VATUSA Staff
+    criteria:
+      - conditions:
+        - type: division_staff
+  - id: 1028772619832524880
+    name: Supervisor
+    criteria:
+      - conditions:
+        - type: rating
+          value: SUP
+      - conditions:
+        - type: rating
+          value: ADM
+  - id: 995807899823636601
+    name: ACE Team
+    criteria:
+      - conditions:
+        - type: role
+          value: ACE
+  - id: 519727760923426816
+    name: Member
+    criteria:
+      - conditions:
+        - type: home
+          value: ZAB
+  - id: 987917615483740180
+    name: ZDV
+    criteria:
+      - conditions:
+        - type: home
+          value: ZDV
+  - id: 987920017150586881
+    name: ZFW
+    criteria:
+      - conditions:
+        - type: home
+          value: ZFW
+  - id: 987917119507267604
+    name: ZHU
+    criteria:
+      - conditions:
+        - type: home
+          value: ZHU
+  - id: 987919871880888390
+    name: ZKC
+    criteria:
+      - conditions:
+        - type: home
+          value: ZKC
+  - id: 987919820009897994
+    name: ZLA
+    criteria:
+      - conditions:
+        - type: home
+          value: ZLA
+  - id: 519727811838214164
+    name: Visitor
+    criteria:
+      - conditions:
+        - type: visit
+          value: ZAB
+  - id: 739592732737142786
+    name: ARTCC Guest
+    criteria:
+      - conditions:
+        - type: in_division
+          value: true
+        - type: home_or_visit
+          value: ZAB
+          invert: true
+      - conditions:
+        - type: division_visitor
+          value: true
+        - type: home_or_visit
+          value: ZAB
+          invert: true
+  - id: 806720140095520768
+    name: Site Verified
+    criteria:
+      - conditions:
+        - type: all

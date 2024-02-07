@@ -1,0 +1,117 @@
+id: 759176334776729658
+name: ZFW
+active: true
+description: ZFW ARTCC Server
+facility: ZFW
+name_format_type: first_last
+title_type: local
+roles:
+  - id: 767831020447203348
+    name: Observer
+    criteria:
+      - conditions:
+          - type: rating
+            value: OBS
+  - id: 767831019826446377
+    name: Student 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: S1
+  - id: 767831019242913792
+    name: Student 2
+    criteria:
+      - conditions:
+          - type: rating
+            value: S2
+  - id: 767831018748510208
+    name: Student 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: S3
+  - id: 767831018089742367
+    name: Controller 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: C1
+  - id: 767831017322840105
+    name: Controller 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: C3
+  - id: 767831775375392838
+    name: Instructor 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: I1
+  - id: 767831774411227156
+    name: Instructor 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: I3
+  - id: 767831016562884659
+    name: Supervisor
+    criteria:
+      - conditions:
+          - type: rating
+            value: SUP
+  - id: 767831016089321492
+    name: Administrator
+    criteria:
+      - conditions:
+          - type: rating
+            value: ADM
+  - id: 767831791997550642
+    name: Mentor
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZFW:MTR
+  - id: 768340506681540619
+    name: VATSIM/VATUSA Staff
+    criteria:
+      - conditions:
+          - type: division_staff
+  - id: 767832523169857586
+    name: Training Staff
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZFW:MTR
+      - conditions:
+          - type: facility_role
+            value: ZFW:INS
+      - conditions:
+          - type: home
+            value: ZFW
+          - type: rating
+            value: I1
+      - conditions:
+          - type: home
+            value: ZFW
+          - type: rating
+            value: I3
+  - id: 768707647753945109
+    name: Ace Team
+    criteria:
+      - conditions:
+          - type: role
+            value: ACE
+  - id: 767828062217044008
+    name: ZFW Controller
+    criteria:
+      - conditions:
+          - type: home
+            value: ZFW
+  - id: 768338311261323264
+    name: Visiting Controller
+    criteria:
+      - conditions:
+          - type: visit
+            value: ZFW
+

@@ -1,0 +1,161 @@
+id: 358264961233059843
+name: vATCSCC
+active: true
+description: vATCSCC Discord Server
+facility: ALL
+name_format_type: first_last
+title_type: division
+roles:
+  - id: 358266819422978048
+    name: Facility Event Staff
+    criteria:
+      - conditions:
+          - type: role
+            value: ATM
+      - conditions:
+          - type: role
+            value: DATM
+      - conditions:
+          - type: role
+            value: TA
+      - conditions:
+          - type: role
+            value: EC
+  - id: 505908135354171423
+    name: VAUTSA Staff
+    criteria:
+      - conditions:
+          - type: division_staff
+  # Facility Specific Roles
+  - id: 1146967504497946625
+    name: HCF
+    criteria:
+      - conditions:
+          - type: home
+            value: HCF
+  - id: 358270852317577216
+    name: ZAB
+    criteria:
+      - conditions:
+          - type: home
+            value: ZAB
+  - id: 358720386164195330
+    name: ZAN
+    criteria:
+      - conditions:
+          - type: home
+            value: ZAN
+  - id: 358270311679918080
+    name: ZAU
+    criteria:
+      - conditions:
+          - type: home
+            value: ZAU
+  - id: 358269309354508289
+    name: ZBW
+    criteria:
+      - conditions:
+          - type: home
+            value: ZBW
+  - id: 358269514032611329
+    name: ZDC
+    criteria:
+      - conditions:
+          - type: home
+            value: ZDC
+  - id: 358270623329419265
+    name: ZDV
+    criteria:
+      - conditions:
+          - type: home
+            value: ZDV
+  - id: 358270664215494658
+    name: ZFW
+    criteria:
+      - conditions:
+          - type: home
+            value: ZFW
+  - id: 358270808277385217
+    name: ZHU
+    criteria:
+      - conditions:
+          - type: home
+            value: ZHU
+  - id: 358270225785028620
+    name: ZID
+    criteria:
+      - conditions:
+          - type: home
+            value: ZID
+  - id: 358270105018171392
+    name: ZJX
+    criteria:
+      - conditions:
+          - type: home
+            value: ZJX
+  - id: 358270538189111298
+    name: ZKC
+    criteria:
+      - conditions:
+          - type: home
+            value: ZKC
+  - id: 358271152038215681
+    name: ZLA
+    criteria:
+      - conditions:
+          - type: home
+            value: ZLA
+  - id: 358271709620731915
+    name: ZLC
+    criteria:
+      - conditions:
+          - type: home
+            value: ZLC
+  - id: 358270015708987395
+    name: ZMA
+    criteria:
+      - conditions:
+          - type: home
+            value: ZMA
+  - id: 358270988607160320
+    name: ZME
+    criteria:
+      - conditions:
+          - type: home
+            value: ZME
+  - id: 358270436016128002
+    name: ZMP
+    criteria:
+      - conditions:
+          - type: home
+            value: ZMP
+  - id: 358268676451074049
+    name: ZNY
+    criteria:
+      - conditions:
+          - type: home
+            value: ZNY
+  - id: 358271200666976278
+    name: ZOA
+    criteria:
+      - conditions:
+          - type: home
+            value: ZOA
+  - id: 358269695708889091
+    name: ZOB
+    criteria:
+      - conditions:
+          - type: home
+            value: ZOB
+  - id: 358271644306767873
+    name: ZSE
+    criteria:
+      - conditions:
+          - type: home
+            value: ZSE
+  - id: 358269794174238722
+    name: ZTL
+    criteria:
+      - conditions:
+          - type: home
+            value: ZTL

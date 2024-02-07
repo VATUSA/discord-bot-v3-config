@@ -1,0 +1,138 @@
+id: 714617514562158643
+name: ZSE
+active: true
+description: ZSE ARTCC Server
+facility: ZSE
+name_format_type: first_last
+title_type: none
+roles:
+  - id: 743315403803066438
+    name: Verified
+    criteria:
+      - conditions:
+          - type: all
+  - id: 717910653775642696
+    name: Observer
+    criteria:
+      - conditions:
+          - type: rating
+            value: OBS
+          - type: home_or_visit
+            value: ZSE
+  - id: 714655150542946336
+    name: Student 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: S1
+          - type: home_or_visit
+            value: ZSE
+  - id: 719411256255053915
+    name: Student 2
+    criteria:
+      - conditions:
+          - type: rating
+            value: S2
+          - type: home_or_visit
+            value: ZSE
+  - id: 714655052538839040
+    name: Student 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: S3
+          - type: home_or_visit
+            value: ZSE
+  - id: 714655023019196422
+    name: Controller 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: C1
+          - type: home_or_visit
+            value: ZSE
+  - id: 714654964743536703
+    name: Controller 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: C3
+          - type: home_or_visit
+            value: ZSE
+  - id: 714655581474127952
+    name: Instructor 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: I1
+          - type: home_or_visit
+            value: ZSE
+  - id: 717874330473594921
+    name: Instructor 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: I3
+          - type: home_or_visit
+            value: ZSE
+  - id: 714654837303935078
+    name: Supervisor
+    criteria:
+      - conditions:
+          - type: rating
+            value: SUP
+  - id: 1146314206153551922
+    name: Administrator
+    criteria:
+      - conditions:
+          - type: rating
+            value: ADM
+  - id: 714655179974115369
+    name: Mentor
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZSE:MTR
+  - id: 714655211418943519
+    name: VATUSA Staff
+    criteria:
+      - conditions:
+          - type: division_staff
+  - id: 714638814139908166
+    name: Training Staff
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZSE:MTR
+      - conditions:
+          - type: facility_role
+            value: ZSE:INS
+      - conditions:
+          - type: home
+            value: ZSE
+          - type: rating
+            value: I1
+      - conditions:
+          - type: home
+            value: ZSE
+          - type: rating
+            value: I3
+  - id: 954426557856882708
+    name: Ace Team
+    criteria:
+      - conditions:
+          - type: role
+            value: ACE
+  - id: 752572533554937986
+    name: Home Controller
+    criteria:
+      - conditions:
+          - type: home
+            value: ZSE
+  - id: 714655214409613392
+    name: Visitor
+    criteria:
+      - conditions:
+          - type: visit
+            value: ZSE
+

@@ -1,0 +1,218 @@
+id: 719355786106765355
+name: ZHU
+active: true
+description: Houston ARTCC
+facility: ZHU
+name_format_type: first_last
+title_type: local
+roles:
+  - id: 1161134144366071908
+    name: Verified
+    criteria:
+      - conditions:
+          - type: all
+
+  #
+  # Roster
+  #
+  - id: 719380799345918033
+    name: Home Controller
+    criteria:
+      - conditions:
+          - type: home
+            value: ZHU
+  - id: 719381024924237824
+    name: Visiting Controller
+    criteria:
+      - conditions:
+          - type: visit
+            value: ZHU
+  - id: 770374945573175326
+    name: ARTCC Guest
+    criteria:
+      - conditions:
+          - type: home_or_visit
+            value: ZHU
+            invert: true
+
+  #
+  # Ratings
+  #
+  - id: 719410586391412786
+    name: Observer
+    criteria:
+      - conditions:
+          - type: rating
+            value: OBS
+  - id: 719382089459433474
+    name: Student 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: S1
+  - id: 719381888783089766
+    name: Student 2
+    criteria:
+      - conditions:
+          - type: rating
+            value: S2
+  - id: 719381500377825332
+    name: Student 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: S3
+  - id: 719410600626618368
+    name: Controller 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: C1
+  - id: 719410606293385296
+    name: Controller 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: C3
+  - id: 719410620746825778
+    name: Instructor 1
+    criteria:
+      - conditions:
+          - type: rating
+            value: I1
+  - id: 719410632977416192
+    name: Instructor 3
+    criteria:
+      - conditions:
+          - type: rating
+            value: I3
+  - id: 719410642338971658
+    name: Supervisor
+    criteria:
+      - conditions:
+          - type: rating
+            value: SUP
+  - id: 719410655370805328
+    name: Administrator
+    criteria:
+      - conditions:
+          - type: rating
+            value: ADM
+
+  #
+  # ARTCC Staff
+  #
+  - id: 719377595845574687
+    name: Air Traffic Manager
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:ATM
+  - id: 719379961810780300
+    name: Deputy Air Traffic Manager
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:DATM
+  - id: 719378515715424307
+    name: Training Administrator
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:TA
+  - id: 719379628980043837
+    name: Facility Engineer
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:FE
+  - id: 719641666394390655
+    name: Webmaster
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:WM
+  - id: 719379194810990664
+    name: Events Coordinator
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:EC
+  - id: 719412239400042506
+    name: Facility Staff
+    criteria:
+      - conditions:
+          - type: facility_staff
+            value: ZHU
+  # 719412944248504372 - Assistant Training Administrator
+  # 719379729446207580 - Assistant Facility Engineer
+  # 719412987114291241 - Assistant Webmaster
+  # 719379839693488128 - Assistant Events Coordinator
+  - id: 719734463655051316
+    name: Training Staff
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:MTR
+      - conditions:
+          - type: facility_role
+            value: ZHU:INS
+      - conditions:
+          - type: home
+            value: ZHU
+          - type: rating
+            value: I1
+      - conditions:
+          - type: home
+            value: ZHU
+          - type: rating
+            value: I3
+  - id: 719380281152241686
+    name: Instructor
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:INS
+      - conditions:
+          - type: home
+            value: ZHU
+          - type: rating
+            value: I1
+      - conditions:
+          - type: home
+            value: ZHU
+          - type: rating
+            value: I3
+  - id: 719380342019981422
+    name: Mentor
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHU:MTR
+  # 782832142903672863 - Events Team
+  # 919463215488978955 - CIC/TMU
+  # 769327084790874164 - Webteam
+
+  #
+  # Division Staff
+  #
+  - id: 719412518120062987
+    name: VATUSA Staff
+    criteria:
+      - conditions:
+          - type: division_staff
+  - id: 1080874818955649115
+    name: VATUSA Central Staff
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZHQ:US1
+      - conditions:
+          - type: facility_role
+            value: ZHQ:US2
+  - id: 785954799521890304
+    name: ACE Team
+    criteria:
+      - conditions:
+          - type: role
+            value: ACE
