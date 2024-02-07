@@ -11,7 +11,6 @@ All configuration changes should be made via a fork and be submitted via a Pull 
 - Ensure the bot's role is sorted above all roles that will need to be managed by the bot. The bot will not be able to assign roles or adjust nickname for any user who has a role higher than the bot's highest role.
 - Post a link to your PR in #wm-chat in the VATUSA discord
 - NOTE: The bot will not become active in your server until the configuration is approved and deployed. Please note on the PR if you need us to coordinate with you before activating the bot.
-  Configuration is located in [VATUSA/discord-bot-v3-config](https://github.com/VATUSA/discord-bot-v3-config)
 
 If you require assistance with any of the setup steps above, feel free to reach out in #wm-chat in the VATUSA discord.
 
