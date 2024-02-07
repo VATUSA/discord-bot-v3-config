@@ -4,6 +4,28 @@ Configuration repository for [VATUSA/discord-bot-v3](https://github.com/VATUSA/d
 
 All configuration changes should be made via a fork and be submitted via a Pull Request to main.
 
+# Setup Steps
+- Create a config file per the example with the appropriate values for your server (documentation can be found below)
+- Create a Pull Request with your config file
+- Add the VATUSA Integration bot to your discord server (link below)
+- Ensure the bot's role is sorted above all roles that will need to be managed by the bot. The bot will not be able to assign roles or adjust nickname for any user who has a role higher than the bot's highest role.
+- Post a link to your PR in #wm-chat in the VATUSA discord
+- NOTE: The bot will not become active in your server until the configuration is approved and deployed. Please note on the PR if you need us to coordinate with you before activating the bot.
+  Configuration is located in [VATUSA/discord-bot-v3-config](https://github.com/VATUSA/discord-bot-v3-config)
+
+If you require assistance with any of the setup steps above, feel free to reach out in #wm-chat in the VATUSA discord.
+
+# Recommendations / Considerations
+- Consider adding a role for ACE Team, if you don't already have one. This will allow ACE Controllers to quickly join your discord and be able to access coordination rooms if needed for an event.
+- Consider adding a #verification (or similarly named) channel to let people know how to link their discord account to get their roles. We recommend having a role for all 'verified' members and hiding this channel from all who are already verified. (example text below)
+- Consider adding a role for neighboring controllers, if you do coordination in discord.
+
+# Example verification prompt
+If you can see this channel, your discord account isn't linked with your VATUSA account. Please visit https://www.vatusa.net/my/profile to link your discord account and receive your roles.
+
+# Bot Add link
+https://discord.com/api/oauth2/authorize?client_id=1122353511322103808&permissions=8&scope=bot
+
 
 # Server Configuration
 [Example configuration (ZSE)](https://github.com/VATUSA/discord-bot-v3/blob/main/config/servers/zse.yaml)
