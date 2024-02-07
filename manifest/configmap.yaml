@@ -1,0 +1,1183 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: discord-bot-v3-config
+data:
+  dcc.yaml: |
+    id: 358264961233059843
+    name: vATCSCC
+    active: true
+    description: vATCSCC Discord Server
+    facility: ALL
+    name_format_type: first_last
+    title_type: division
+    roles:
+      - id: 358266819422978048
+        name: Facility Event Staff
+        criteria:
+          - conditions:
+              - type: role
+                value: ATM
+          - conditions:
+              - type: role
+                value: DATM
+          - conditions:
+              - type: role
+                value: TA
+          - conditions:
+              - type: role
+                value: EC
+      - id: 505908135354171423
+        name: VAUTSA Staff
+        criteria:
+          - conditions:
+              - type: division_staff
+      # Facility Specific Roles
+      - id: 1146967504497946625
+        name: HCF
+        criteria:
+          - conditions:
+              - type: home
+                value: HCF
+      - id: 358270852317577216
+        name: ZAB
+        criteria:
+          - conditions:
+              - type: home
+                value: ZAB
+      - id: 358720386164195330
+        name: ZAN
+        criteria:
+          - conditions:
+              - type: home
+                value: ZAN
+      - id: 358270311679918080
+        name: ZAU
+        criteria:
+          - conditions:
+              - type: home
+                value: ZAU
+      - id: 358269309354508289
+        name: ZBW
+        criteria:
+          - conditions:
+              - type: home
+                value: ZBW
+      - id: 358269514032611329
+        name: ZDC
+        criteria:
+          - conditions:
+              - type: home
+                value: ZDC
+      - id: 358270623329419265
+        name: ZDV
+        criteria:
+          - conditions:
+              - type: home
+                value: ZDV
+      - id: 358270664215494658
+        name: ZFW
+        criteria:
+          - conditions:
+              - type: home
+                value: ZFW
+      - id: 358270808277385217
+        name: ZHU
+        criteria:
+          - conditions:
+              - type: home
+                value: ZHU
+      - id: 358270225785028620
+        name: ZID
+        criteria:
+          - conditions:
+              - type: home
+                value: ZID
+      - id: 358270105018171392
+        name: ZJX
+        criteria:
+          - conditions:
+              - type: home
+                value: ZJX
+      - id: 358270538189111298
+        name: ZKC
+        criteria:
+          - conditions:
+              - type: home
+                value: ZKC
+      - id: 358271152038215681
+        name: ZLA
+        criteria:
+          - conditions:
+              - type: home
+                value: ZLA
+      - id: 358271709620731915
+        name: ZLC
+        criteria:
+          - conditions:
+              - type: home
+                value: ZLC
+      - id: 358270015708987395
+        name: ZMA
+        criteria:
+          - conditions:
+              - type: home
+                value: ZMA
+      - id: 358270988607160320
+        name: ZME
+        criteria:
+          - conditions:
+              - type: home
+                value: ZME
+      - id: 358270436016128002
+        name: ZMP
+        criteria:
+          - conditions:
+              - type: home
+                value: ZMP
+      - id: 358268676451074049
+        name: ZNY
+        criteria:
+          - conditions:
+              - type: home
+                value: ZNY
+      - id: 358271200666976278
+        name: ZOA
+        criteria:
+          - conditions:
+              - type: home
+                value: ZOA
+      - id: 358269695708889091
+        name: ZOB
+        criteria:
+          - conditions:
+              - type: home
+                value: ZOB
+      - id: 358271644306767873
+        name: ZSE
+        criteria:
+          - conditions:
+              - type: home
+                value: ZSE
+      - id: 358269794174238722
+        name: ZTL
+        criteria:
+          - conditions:
+              - type: home
+                value: ZTL
+  vatusa.yaml: |
+    id: 699659614928502815
+    name: VATUSA
+    active: true
+    description: Official Division Server
+    facility: ALL
+    name_format_type: first_last
+    title_type: division
+    roles:
+      - id: 1074843942224412722
+        name: Verified
+        criteria:
+          - conditions:
+            - type: all
+      - id: 1074842761926279310
+        name: VATUSA Member
+        criteria:
+          - conditions:
+              - type: in_division
+                value: true
+      - id: 699743085067763767
+        name: Observer
+        criteria:
+          - conditions:
+              - type: rating
+                value: OBS
+      - id: 699743084363251793
+        name: Student 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: S1
+      - id: 699743084002672662
+        name: Student 2
+        criteria:
+          - conditions:
+              - type: rating
+                value: S2
+      - id: 699743083809734688
+        name: Student 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: S3
+      - id: 699743083390042122
+        name: Controller 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: C1
+      - id: 699743083017011200
+        name: Controller 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: C3
+      - id: 918658942639435796
+        name: Instructor 1 (Visitor)
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+              - type: in_division
+                value: false
+      - id: 699743082312368218
+        name: Instructor 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+              - type: in_division
+                value: true
+      - id: 918659567460696075
+        name: Instructor 3 (Visitor)
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+              - type: in_division
+                value: false
+      - id: 699743081767108648
+        name: Instructor 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+              - type: in_division
+                value: true
+      - id: 699743081083175082
+        name: Supervisor
+        criteria:
+          - conditions:
+              - type: rating
+                value: SUP
+      - id: 699743080093581444
+        name: Administrator
+        criteria:
+          - conditions:
+              - type: rating
+                value: ADM
+      - id: 699669625029394493
+        name: ATM/DATM
+        criteria:
+          - conditions:
+              - type: role
+                value: ATM
+          - conditions:
+              - type: role
+                value: DATM
+      - id: 699669672773288013
+        name: TA
+        criteria:
+          - conditions:
+              - type: role
+                value: TA
+      - id: 699669701235703828
+        name: EC
+        criteria:
+          - conditions:
+              - type: role
+                value: EC
+      - id: 699669757820928081
+        name: FE
+        criteria:
+          - conditions:
+              - type: role
+                value: FE
+      - id: 699669702544457749
+        name: WM
+        criteria:
+          - conditions:
+              - type: role
+                value: WM
+      - id: 717175193478365295
+        name: VATUSA Developer
+        criteria:
+          - conditions:
+              - type: role
+                value: USWT
+      - id: 1074835691533512754
+        name: DICE Team
+        criteria:
+          - conditions:
+              - type: role
+                value: DICE
+      - id: 1096981131129270373
+        name: DCC Staff
+        criteria:
+          - conditions:
+              - type: role
+                value: DCC
+      - id: 708602569961897986
+        name: ACE Team
+        criteria:
+          - conditions:
+              - type: role
+                value: ACE
+      - id: 850535607587045406
+        name: Social Media Team
+        criteria:
+          - conditions:
+              - type: role
+                value: SMT
+      - id: 699664936686846052
+        name: VATUSA Staff
+        criteria:
+          - conditions:
+              - type: division_staff
+      - id: 1145593610268586004
+        name: ARTCC Management
+        criteria:
+          - conditions:
+              - type: role
+                value: ATM
+          - conditions:
+              - type: role
+                value: DATM
+          - conditions:
+              - type: role
+                value: TA
+      - id: 1145593686588149827
+        name: ARTCC Staff
+        criteria:
+          - conditions:
+              - type: role
+                value: ATM
+          - conditions:
+              - type: role
+                value: DATM
+          - conditions:
+              - type: role
+                value: TA
+          - conditions:
+              - type: role
+                value: EC
+          - conditions:
+              - type: role
+                value: FE
+          - conditions:
+              - type: role
+                value: WM
+      - id: 1147326521774710855
+        name: Western Region ATM/DATM
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: HCF:ATM
+          - conditions:
+              - type: facility_role
+                value: HCF:DATM
+          - conditions:
+              - type: facility_role
+                value: ZAN:ATM
+          - conditions:
+              - type: facility_role
+                value: ZAN:DATM
+          - conditions:
+              - type: facility_role
+                value: ZSE:ATM
+          - conditions:
+              - type: facility_role
+                value: ZSE:DATM
+          - conditions:
+              - type: facility_role
+                value: ZOA:ATM
+          - conditions:
+              - type: facility_role
+                value: ZOA:DATM
+          - conditions:
+              - type: facility_role
+                value: ZLA:ATM
+          - conditions:
+              - type: facility_role
+                value: ZLA:DATM
+          - conditions:
+              - type: facility_role
+                value: ZLC:ATM
+          - conditions:
+              - type: facility_role
+                value: ZLC:DATM
+          - conditions:
+              - type: facility_role
+                value: ZDV:ATM
+          - conditions:
+              - type: facility_role
+                value: ZDV:DATM
+          - conditions:
+              - type: facility_role
+                value: ZAB:ATM
+          - conditions:
+              - type: facility_role
+                value: ZAB:DATM
+      - id: 1147326570520903742
+        name: Central Region ATM/DATM
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZMP:ATM
+          - conditions:
+              - type: facility_role
+                value: ZMP:DATM
+          - conditions:
+              - type: facility_role
+                value: ZKC:ATM
+          - conditions:
+              - type: facility_role
+                value: ZKC:DATM
+          - conditions:
+              - type: facility_role
+                value: ZFW:ATM
+          - conditions:
+              - type: facility_role
+                value: ZFW:DATM
+          - conditions:
+              - type: facility_role
+                value: ZHU:ATM
+          - conditions:
+              - type: facility_role
+                value: ZHU:DATM
+          - conditions:
+              - type: facility_role
+                value: ZAU:ATM
+          - conditions:
+              - type: facility_role
+                value: ZAU:DATM
+          - conditions:
+              - type: facility_role
+                value: ZME:ATM
+          - conditions:
+              - type: facility_role
+                value: ZME:DATM
+          - conditions:
+              - type: facility_role
+                value: ZID:ATM
+          - conditions:
+              - type: facility_role
+                value: ZID:DATM
+      - id: 1147326616972841050
+        name: Eastern Region ATM/DATM
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZBW:ATM
+          - conditions:
+              - type: facility_role
+                value: ZBW:DATM
+          - conditions:
+              - type: facility_role
+                value: ZNY:ATM
+          - conditions:
+              - type: facility_role
+                value: ZNY:DATM
+          - conditions:
+              - type: facility_role
+                value: ZOB:ATM
+          - conditions:
+              - type: facility_role
+                value: ZOB:DATM
+          - conditions:
+              - type: facility_role
+                value: ZTL:ATM
+          - conditions:
+              - type: facility_role
+                value: ZTL:DATM
+          - conditions:
+              - type: facility_role
+                value: ZDC:ATM
+          - conditions:
+              - type: facility_role
+                value: ZDC:DATM
+          - conditions:
+              - type: facility_role
+                value: ZJX:ATM
+          - conditions:
+              - type: facility_role
+                value: ZJX:DATM
+          - conditions:
+              - type: facility_role
+                value: ZMA:ATM
+          - conditions:
+              - type: facility_role
+                value: ZMA:DATM
+    
+  zab.yaml: |
+    id: 506652179743113236
+    name: ZAB
+    active: true
+    description: Albuquerque ARTCC
+    facility: ZAB
+    name_format_type: first_last
+    title_type: local
+    roles:
+      - id: 506654977838809088
+        name: Air Traffic Manager
+        criteria:
+          - conditions:
+            - type: facility_role
+              value: ZAB:ATM
+      - id: 506655084009226271
+        name: Deputy Air Traffic Manager
+        criteria:
+          - conditions:
+            - type: facility_role
+              value: ZAB:DATM
+      - id: 506655134273765388
+        name: Training Administrator
+        criteria:
+          - conditions:
+            - type: facility_role
+              value: ZAB:TA
+      - id: 506655166871633940
+        name: Events Coordinator
+        criteria:
+          - conditions:
+            - type: facility_role
+              value: ZAB:EC
+      - id: 506655191450386462
+        name: Webmaster
+        criteria:
+          - conditions:
+            - type: facility_role
+              value: ZAB:WM
+      - id: 506655243442847754
+        name: Facility Engineer
+        criteria:
+          - conditions:
+            - type: facility_role
+              value: ZAB:FE
+      - id: 506655401857515520
+        name: Mentor
+        criteria:
+          - conditions:
+            - type: role
+              value: MTR
+            - type: home
+              value: ZAB
+      - id: 980525829555621958
+        name: Instructor
+        criteria:
+          - conditions:
+            - type: rating
+              value: I1
+            - type: home
+              value: ZAB
+          - conditions:
+            - type: facility_role
+              value: ZAB:TA
+          - conditions:
+            - type: facility_role
+              value: ZAB:INS
+      - id: 809905284277207050
+        name: Senior Controller
+        criteria:
+          - conditions:
+            - type: rating
+              value: C3
+            - type: home
+              value: ZAB
+      - id: 506655416697094145
+        name: Controller
+        criteria:
+          - conditions:
+            - type: rating
+              value: C1
+            - type: home
+              value: ZAB
+      - id: 506655421692641291
+        name: Senior Student
+        criteria:
+          - conditions:
+            - type: rating
+              value: S3
+            - type: home
+              value: ZAB
+      - id: 506655484359475200
+        name: Student 2
+        criteria:
+          - conditions:
+            - type: rating
+              value: S2
+            - type: home
+              value: ZAB
+      - id: 506655507591725057
+        name: Student 1
+        criteria:
+          - conditions:
+            - type: rating
+              value: S1
+            - type: home
+              value: ZAB
+      - id: 506655521999159306
+        name: Observer
+        criteria:
+          - conditions:
+            - type: rating
+              value: OBS
+            - type: home
+              value: ZAB
+      - id: 980527733710921758
+        name: VATUSA Staff
+        criteria:
+          - conditions:
+            - type: division_staff
+      - id: 1028772619832524880
+        name: Supervisor
+        criteria:
+          - conditions:
+            - type: rating
+              value: SUP
+          - conditions:
+            - type: rating
+              value: ADM
+      - id: 995807899823636601
+        name: ACE Team
+        criteria:
+          - conditions:
+            - type: role
+              value: ACE
+      - id: 519727760923426816
+        name: Member
+        criteria:
+          - conditions:
+            - type: home
+              value: ZAB
+      - id: 987917615483740180
+        name: ZDV
+        criteria:
+          - conditions:
+            - type: home
+              value: ZDV
+      - id: 987920017150586881
+        name: ZFW
+        criteria:
+          - conditions:
+            - type: home
+              value: ZFW
+      - id: 987917119507267604
+        name: ZHU
+        criteria:
+          - conditions:
+            - type: home
+              value: ZHU
+      - id: 987919871880888390
+        name: ZKC
+        criteria:
+          - conditions:
+            - type: home
+              value: ZKC
+      - id: 987919820009897994
+        name: ZLA
+        criteria:
+          - conditions:
+            - type: home
+              value: ZLA
+      - id: 519727811838214164
+        name: Visitor
+        criteria:
+          - conditions:
+            - type: visit
+              value: ZAB
+      - id: 739592732737142786
+        name: ARTCC Guest
+        criteria:
+          - conditions:
+            - type: in_division
+              value: true
+            - type: home_or_visit
+              value: ZAB
+              invert: true
+          - conditions:
+            - type: division_visitor
+              value: true
+            - type: home_or_visit
+              value: ZAB
+              invert: true
+      - id: 806720140095520768
+        name: Site Verified
+        criteria:
+          - conditions:
+            - type: all
+  zfw.yaml: |
+    id: 759176334776729658
+    name: ZFW
+    active: true
+    description: ZFW ARTCC Server
+    facility: ZFW
+    name_format_type: first_last
+    title_type: local
+    roles:
+      - id: 767831020447203348
+        name: Observer
+        criteria:
+          - conditions:
+              - type: rating
+                value: OBS
+      - id: 767831019826446377
+        name: Student 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: S1
+      - id: 767831019242913792
+        name: Student 2
+        criteria:
+          - conditions:
+              - type: rating
+                value: S2
+      - id: 767831018748510208
+        name: Student 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: S3
+      - id: 767831018089742367
+        name: Controller 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: C1
+      - id: 767831017322840105
+        name: Controller 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: C3
+      - id: 767831775375392838
+        name: Instructor 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+      - id: 767831774411227156
+        name: Instructor 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+      - id: 767831016562884659
+        name: Supervisor
+        criteria:
+          - conditions:
+              - type: rating
+                value: SUP
+      - id: 767831016089321492
+        name: Administrator
+        criteria:
+          - conditions:
+              - type: rating
+                value: ADM
+      - id: 767831791997550642
+        name: Mentor
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZFW:MTR
+      - id: 768340506681540619
+        name: VATSIM/VATUSA Staff
+        criteria:
+          - conditions:
+              - type: division_staff
+      - id: 767832523169857586
+        name: Training Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZFW:MTR
+          - conditions:
+              - type: facility_role
+                value: ZFW:INS
+          - conditions:
+              - type: home
+                value: ZFW
+              - type: rating
+                value: I1
+          - conditions:
+              - type: home
+                value: ZFW
+              - type: rating
+                value: I3
+      - id: 768707647753945109
+        name: Ace Team
+        criteria:
+          - conditions:
+              - type: role
+                value: ACE
+      - id: 767828062217044008
+        name: ZFW Controller
+        criteria:
+          - conditions:
+              - type: home
+                value: ZFW
+      - id: 768338311261323264
+        name: Visiting Controller
+        criteria:
+          - conditions:
+              - type: visit
+                value: ZFW
+    
+  zhu.yaml: |
+    id: 719355786106765355
+    name: ZHU
+    active: true
+    description: Houston ARTCC
+    facility: ZHU
+    name_format_type: first_last
+    title_type: local
+    roles:
+      - id: 1161134144366071908
+        name: Verified
+        criteria:
+          - conditions:
+              - type: all
+    
+      #
+      # Roster
+      #
+      - id: 719380799345918033
+        name: Home Controller
+        criteria:
+          - conditions:
+              - type: home
+                value: ZHU
+      - id: 719381024924237824
+        name: Visiting Controller
+        criteria:
+          - conditions:
+              - type: visit
+                value: ZHU
+      - id: 770374945573175326
+        name: ARTCC Guest
+        criteria:
+          - conditions:
+              - type: home_or_visit
+                value: ZHU
+                invert: true
+    
+      #
+      # Ratings
+      #
+      - id: 719410586391412786
+        name: Observer
+        criteria:
+          - conditions:
+              - type: rating
+                value: OBS
+      - id: 719382089459433474
+        name: Student 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: S1
+      - id: 719381888783089766
+        name: Student 2
+        criteria:
+          - conditions:
+              - type: rating
+                value: S2
+      - id: 719381500377825332
+        name: Student 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: S3
+      - id: 719410600626618368
+        name: Controller 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: C1
+      - id: 719410606293385296
+        name: Controller 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: C3
+      - id: 719410620746825778
+        name: Instructor 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+      - id: 719410632977416192
+        name: Instructor 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+      - id: 719410642338971658
+        name: Supervisor
+        criteria:
+          - conditions:
+              - type: rating
+                value: SUP
+      - id: 719410655370805328
+        name: Administrator
+        criteria:
+          - conditions:
+              - type: rating
+                value: ADM
+    
+      #
+      # ARTCC Staff
+      #
+      - id: 719377595845574687
+        name: Air Traffic Manager
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:ATM
+      - id: 719379961810780300
+        name: Deputy Air Traffic Manager
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:DATM
+      - id: 719378515715424307
+        name: Training Administrator
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:TA
+      - id: 719379628980043837
+        name: Facility Engineer
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:FE
+      - id: 719641666394390655
+        name: Webmaster
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:WM
+      - id: 719379194810990664
+        name: Events Coordinator
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:EC
+      - id: 719412239400042506
+        name: Facility Staff
+        criteria:
+          - conditions:
+              - type: facility_staff
+                value: ZHU
+      # 719412944248504372 - Assistant Training Administrator
+      # 719379729446207580 - Assistant Facility Engineer
+      # 719412987114291241 - Assistant Webmaster
+      # 719379839693488128 - Assistant Events Coordinator
+      - id: 719734463655051316
+        name: Training Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:MTR
+          - conditions:
+              - type: facility_role
+                value: ZHU:INS
+          - conditions:
+              - type: home
+                value: ZHU
+              - type: rating
+                value: I1
+          - conditions:
+              - type: home
+                value: ZHU
+              - type: rating
+                value: I3
+      - id: 719380281152241686
+        name: Instructor
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:INS
+          - conditions:
+              - type: home
+                value: ZHU
+              - type: rating
+                value: I1
+          - conditions:
+              - type: home
+                value: ZHU
+              - type: rating
+                value: I3
+      - id: 719380342019981422
+        name: Mentor
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHU:MTR
+      # 782832142903672863 - Events Team
+      # 919463215488978955 - CIC/TMU
+      # 769327084790874164 - Webteam
+    
+      #
+      # Division Staff
+      #
+      - id: 719412518120062987
+        name: VATUSA Staff
+        criteria:
+          - conditions:
+              - type: division_staff
+      - id: 1080874818955649115
+        name: VATUSA Central Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZHQ:US1
+          - conditions:
+              - type: facility_role
+                value: ZHQ:US2
+      - id: 785954799521890304
+        name: ACE Team
+        criteria:
+          - conditions:
+              - type: role
+                value: ACE
+  zse.yaml: |
+    id: 714617514562158643
+    name: ZSE
+    active: true
+    description: ZSE ARTCC Server
+    facility: ZSE
+    name_format_type: first_last
+    title_type: none
+    roles:
+      - id: 743315403803066438
+        name: Verified
+        criteria:
+          - conditions:
+              - type: all
+      - id: 717910653775642696
+        name: Observer
+        criteria:
+          - conditions:
+              - type: rating
+                value: OBS
+              - type: home_or_visit
+                value: ZSE
+      - id: 714655150542946336
+        name: Student 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: S1
+              - type: home_or_visit
+                value: ZSE
+      - id: 719411256255053915
+        name: Student 2
+        criteria:
+          - conditions:
+              - type: rating
+                value: S2
+              - type: home_or_visit
+                value: ZSE
+      - id: 714655052538839040
+        name: Student 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: S3
+              - type: home_or_visit
+                value: ZSE
+      - id: 714655023019196422
+        name: Controller 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: C1
+              - type: home_or_visit
+                value: ZSE
+      - id: 714654964743536703
+        name: Controller 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: C3
+              - type: home_or_visit
+                value: ZSE
+      - id: 714655581474127952
+        name: Instructor 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+              - type: home_or_visit
+                value: ZSE
+      - id: 717874330473594921
+        name: Instructor 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+              - type: home_or_visit
+                value: ZSE
+      - id: 714654837303935078
+        name: Supervisor
+        criteria:
+          - conditions:
+              - type: rating
+                value: SUP
+      - id: 1146314206153551922
+        name: Administrator
+        criteria:
+          - conditions:
+              - type: rating
+                value: ADM
+      - id: 714655179974115369
+        name: Mentor
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZSE:MTR
+      - id: 714655211418943519
+        name: VATUSA Staff
+        criteria:
+          - conditions:
+              - type: division_staff
+      - id: 714638814139908166
+        name: Training Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZSE:MTR
+          - conditions:
+              - type: facility_role
+                value: ZSE:INS
+          - conditions:
+              - type: home
+                value: ZSE
+              - type: rating
+                value: I1
+          - conditions:
+              - type: home
+                value: ZSE
+              - type: rating
+                value: I3
+      - id: 954426557856882708
+        name: Ace Team
+        criteria:
+          - conditions:
+              - type: role
+                value: ACE
+      - id: 752572533554937986
+        name: Home Controller
+        criteria:
+          - conditions:
+              - type: home
+                value: ZSE
+      - id: 714655214409613392
+        name: Visitor
+        criteria:
+          - conditions:
+              - type: visit
+                value: ZSE
+    

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: discord-bot-v3-config
+data:
+  {{- range . }}
+  {{.FileName}}: |
+  {{- range .Lines }}
+    {{ . }}
+  {{- end -}}
+  {{- end -}}
