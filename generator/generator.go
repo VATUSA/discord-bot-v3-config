@@ -23,7 +23,7 @@ func main() {
 	}
 }
 func generateConfigMap() error {
-	rootPath := "servers"
+	rootPath := "config"
 	pfx := len(rootPath) + 1
 	tpl := template.Must(template.ParseFiles("generator/templates/configmap.yaml"))
 
