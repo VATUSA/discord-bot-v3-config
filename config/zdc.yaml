@@ -1,0 +1,80 @@
+id: 391802941486530561
+name: ZDC
+active: true
+description: Virtual Washington ARTCC
+facility: ZDC
+name_format_type: first_last
+title_type: local
+roles:
+  - id: 507976410321911848
+    name: ZDC members
+    criteria:
+      - conditions:
+          - type: home
+            value: ZDC
+  - id: 507970040310792224
+    name: Visitor
+    criteria:
+      - conditions:
+          - type: visit
+            value: ZDC
+  - id: 561034693634686976
+    name: OBS
+    criteria:
+      - conditions:
+          - type: rating
+            value: OBS
+  - id: 561034693412257822
+    name: S1
+    criteria:
+      - conditions:
+          - type: rating
+            value: S1
+  - id: 561034693097553930
+    name: S2
+    criteria:
+      - conditions:
+          - type: rating
+            value: S2
+  - id: 561034692749557812
+    name: S3
+    criteria:
+      - conditions:
+          - type: rating
+            value: S3
+  - id: 561034692506419200
+    name: C1
+    criteria:
+      - conditions:
+          - type: rating
+            value: C1
+  - id: 561034691830874133
+    name: C3
+    criteria:
+      - conditions:
+          - type: rating
+            value: C3
+  - id: 561034691797450763
+    name: I1
+    criteria:
+      - conditions:
+          - type: rating
+            value: I1
+  - id: 561034691420094486
+    name: I3
+    criteria:
+      - conditions:
+          - type: rating
+            value: I3
+  - id: 475896028864970752
+    name: SUP
+    criteria:
+      - conditions:
+          - type: rating
+            value: SUP
+  - id: 561034690862120981
+    name: ADM
+    criteria:
+      - conditions:
+          - type: rating
+            value: ADM
