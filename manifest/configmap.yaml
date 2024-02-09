@@ -705,6 +705,87 @@ data:
         criteria:
           - conditions:
             - type: all
+  zdc.yaml: |
+    id: 391802941486530561
+    name: ZDC
+    active: true
+    description: Virtual Washington ARTCC
+    facility: ZDC
+    name_format_type: first_last
+    title_type: local
+    roles:
+      - id: 507976410321911848
+        name: ZDC members
+        criteria:
+          - conditions:
+              - type: home
+                value: ZDC
+      - id: 507970040310792224
+        name: Visitor
+        criteria:
+          - conditions:
+              - type: visit
+                value: ZDC
+      - id: 561034693634686976
+        name: OBS
+        criteria:
+          - conditions:
+              - type: rating
+                value: OBS
+      - id: 561034693412257822
+        name: S1
+        criteria:
+          - conditions:
+              - type: rating
+                value: S1
+      - id: 561034693097553930
+        name: S2
+        criteria:
+          - conditions:
+              - type: rating
+                value: S2
+      - id: 561034692749557812
+        name: S3
+        criteria:
+          - conditions:
+              - type: rating
+                value: S3
+      - id: 561034692506419200
+        name: C1
+        criteria:
+          - conditions:
+              - type: rating
+                value: C1
+      - id: 561034691830874133
+        name: C3
+        criteria:
+          - conditions:
+              - type: rating
+                value: C3
+      - id: 561034691797450763
+        name: I1
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+      - id: 561034691420094486
+        name: I3
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+      - id: 475896028864970752
+        name: SUP
+        criteria:
+          - conditions:
+              - type: rating
+                value: SUP
+      - id: 561034690862120981
+        name: ADM
+        criteria:
+          - conditions:
+              - type: rating
+                value: ADM
   zfw.yaml: |
     id: 759176334776729658
     name: ZFW
@@ -1042,6 +1123,126 @@ data:
           - conditions:
               - type: role
                 value: ACE
+  zid.yaml: |
+    id: 477298775455563776
+    name: ZID
+    active: true
+    description: Indy Center
+    facility: ZID
+    name_format_type: first_last
+    title_type: local
+    roles:
+      - id: 896858108054368298
+        name: Observer
+        criteria:
+          - conditions:
+              - type: rating
+                value: OBS
+      - id: 896858107702042655
+        name: Student 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: S1
+      - id: 896858107404255233
+        name: Student 2
+        criteria:
+          - conditions:
+              - type: rating
+                value: S2
+      - id: 896858107051909159
+        name: Student 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: S3
+      - id: 896858105789440041
+        name: Controller 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: C1
+      - id: 896858105567129631
+        name: Controller 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: C3
+      - id: 896858105390977084
+        name: Instructor 1
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+      - id: 896858104677924916
+        name: Instructor 3
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+      - id: 896858104187220030
+        name: Supervisor
+        criteria:
+          - conditions:
+              - type: rating
+                value: SUP
+      - id: 896858103914561596
+        name: Administrator
+        criteria:
+          - conditions:
+              - type: rating
+                value: ADM
+      - id: 1178168909115969707
+        name: Mentor
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZID:MTR
+      - id: 991370038340759593
+        name: VATUSA Staff
+        criteria:
+          - conditions:
+              - type: division_staff
+      - id: 477496066590375947
+        name: Training Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: ZID:MTR
+          - conditions:
+              - type: facility_role
+                value: ZID:INS
+          - conditions:
+              - type: home
+                value: ZID
+              - type: rating
+                value: I1
+          - conditions:
+              - type: home
+                value: ZID
+              - type: rating
+                value: I3
+      - id: 700873587388711012
+        name: Ace Team
+        criteria:
+          - conditions:
+              - type: role
+                value: ACE
+      - id: 477495351838900254
+        name: Air Traffic Controller
+        criteria:
+          - conditions:
+              - type: home
+                value: ZID
+          - conditions:
+              - type: visit
+                value: ZID
+      - id: 1125403438545641564
+        name: Member
+        criteria:
+          - conditions:
+              - type: all
+                value: true
   zse.yaml: |
     id: 714617514562158643
     name: ZSE
