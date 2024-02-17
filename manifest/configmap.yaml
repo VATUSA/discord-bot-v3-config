@@ -310,6 +310,12 @@ data:
           - conditions:
               - type: role
                 value: DICE
+      - id: 917673471121702972
+        name: Mentor
+        criteria:
+          - conditions:
+              - type: role
+                value: MTR
       - id: 1096981131129270373
         name: DCC Staff
         criteria:
