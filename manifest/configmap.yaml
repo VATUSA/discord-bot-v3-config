@@ -165,6 +165,194 @@ data:
           - conditions:
               - type: home
                 value: ZTL
+  hcf.yaml: |
+    id: 769347549651664906
+    name: HCF
+    active: true
+    description: Honolulu Control Facility and Guam CERAP
+    facility: HCF
+    name_format_type: first_last_initial
+    title_type: local
+    roles:
+      - id: 856333793157185556
+        name: Pilot
+        criteria:
+          - conditions:
+              - type: all
+    
+      #
+      # Roster
+      #
+      - id: 769347549659922469
+        name: HCF Members
+        criteria:
+          - conditions:
+              - type: home
+                value: HCF
+      - id: 769347549659922468
+        name: Visitors
+        criteria:
+          - conditions:
+              - type: visit
+                value: HCF
+      - id: 856333793157185556
+        name: Pilots
+        criteria:
+          - conditions:
+              - type: home_or_visit
+                value: HCF
+                invert: true
+    
+      #
+      # Ratings
+      #
+      - id: 769347549651664912
+        name: OBS
+        criteria:
+          - conditions:
+              - type: rating
+                value: OBS
+      - id: 769347549651664913
+        name: S1
+        criteria:
+          - conditions:
+              - type: rating
+                value: S1
+      - id: 769347549651664914
+        name: S2
+        criteria:
+          - conditions:
+              - type: rating
+                value: S2
+      - id: 769347549651664915
+        name: S3
+        criteria:
+          - conditions:
+              - type: rating
+                value: S3
+      - id: 769347549659922462
+        name: C1
+        criteria:
+          - conditions:
+              - type: rating
+                value: C1
+      - id: 769347549659922463
+        name: C3
+        criteria:
+          - conditions:
+              - type: rating
+                value: C3
+      - id: 769347549659922464
+        name: I1
+        criteria:
+          - conditions:
+              - type: rating
+                value: I1
+      - id: 769347549659922465
+        name: I3
+        criteria:
+          - conditions:
+              - type: rating
+                value: I3
+      - id: 769347549667917897
+        name: SUP
+        criteria:
+          - conditions:
+              - type: rating
+                value: SUP
+      - id: 769347549667917898
+        name: ADM
+        criteria:
+          - conditions:
+              - type: rating
+                value: ADM
+    
+      #
+      # ARTCC Staff
+      #
+      - id: 769347549667917901
+        name: HCF Senior Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: HCF:ATM
+          - conditions:
+              - type: facility_role
+                value: HCF:DATM
+          - conditions:
+              - type: facility_role
+                value: HCF:TA
+      - id: 769347549667917900
+        name: HCF Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: HCF:FE
+          - conditions:
+              - type: facility_role
+                value: HCF:WM
+          - conditions:
+              - type: facility_role
+                value: HCF:EC
+      # 1151981811895898175 - Assistant Facility Engineer (Facility Team)
+      - id: 1151981135996407900
+        name: Training Staff
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: HCF:MTR
+          - conditions:
+              - type: facility_role
+                value: HCF:INS
+          - conditions:
+              - type: home
+                value: HCF
+              - type: rating
+                value: I1
+          - conditions:
+              - type: home
+                value: HCF
+              - type: rating
+                value: I3
+      - id: 769347549667917896
+        name: Instructors
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: HCF:INS
+          - conditions:
+              - type: home
+                value: HCF
+              - type: rating
+                value: I1
+          - conditions:
+              - type: home
+                value: HCF
+              - type: rating
+                value: I3
+      - id: 769347549667917895
+        name: Mentors
+        criteria:
+          - conditions:
+              - type: facility_role
+                value: HCF:MTR
+      # 769347549659922467 - Events Team
+      # 769347549659922466 - Webteam
+    
+      #
+      # Division Staff
+      #
+      - id: 769347549667917899
+        name: VATUSA Staff
+        criteria:
+          - conditions:
+              - type: division_staff
+      - id: 1109242610616373378
+        name: Event Visitor
+        criteria:
+          - conditions:
+              - type: role
+                value: ACE
   vatusa.yaml: |
     id: 699659614928502815
     name: VATUSA
