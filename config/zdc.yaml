@@ -6,6 +6,11 @@ facility: ZDC
 name_format_type: first_last
 title_type: local
 roles:
+  - id: 1253423256732696608
+    name: Verified
+    criteria:
+      - conditions:
+        - type: all
   - id: 507976410321911848
     name: ZDC members
     criteria:
