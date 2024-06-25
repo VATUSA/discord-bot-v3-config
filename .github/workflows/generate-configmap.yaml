@@ -1,4 +1,5 @@
-name: Generate ConfigMap
+name: Generate and Update ConfigMap
+
 on: [push]
 
 jobs:
@@ -14,8 +15,26 @@ jobs:
         run: go build -o bin/generator ./generator/generator.go
       - name: Generate ConfigMap
         run: ./bin/generator
-      # Commit all changed files back to the repository
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        id: auto_commit
+
+      # Checkout the Target Repository
+      - name: Checkout GitOps Repository
+        uses: actions/checkout@v4
         with:
-          branch: main
+          repository: 'VATUSA/gitops'
+          path: gitops  # Choose a suitable directory name
+          token: ${{ secrets.G_TOKEN }}
+
+      # Update the ConfigMap (Adapt paths as needed)
+      - name: Update ConfigMap
+        run: |
+          cp manifest/configmap.yaml gitops/current/discord-bot-v3/configmap.yaml
+
+      # Commit and Push to the Target Repository
+      - name: Commit and Push Changes
+        run: |
+          cd gitops # Move into the checked out repository
+          git config --global user.email "vatusa6@vatusa.net"
+          git config --global user.name "VATUSA6"
+          git add current/discord-bot-v3/configmap.yaml
+          git commit -m "Update configmap.yaml from generator"
+          git push origin main
