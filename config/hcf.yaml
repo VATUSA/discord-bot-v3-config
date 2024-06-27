@@ -27,13 +27,6 @@ roles:
       - conditions:
           - type: visit
             value: HCF
-  - id: 856333793157185556
-    name: Pilots
-    criteria:
-      - conditions:
-          - type: home_or_visit
-            value: HCF
-            invert: true
 
   #
   # Ratings
