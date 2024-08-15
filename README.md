@@ -27,7 +27,7 @@ https://discord.com/api/oauth2/authorize?client_id=1122353511322103808&permissio
 
 
 # Server Configuration
-[Example configuration (ZSE)](https://github.com/VATUSA/discord-bot-v3/blob/main/config/servers/zse.yaml)
+[Example configuration (ZSE)](https://github.com/VATUSA/discord-bot-v3-config/blob/main/config/servers/zse.yaml)
 
 Required Configuration
 ```yaml
