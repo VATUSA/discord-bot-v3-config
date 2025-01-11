@@ -3,7 +3,7 @@ name: ZSE
 active: true
 description: ZSE ARTCC Server
 facility: ZSE
-name_format_type: first_last_initial
+name_format_type: first_last
 title_type: none
 roles:
   - id: 743315403803066438
