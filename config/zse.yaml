@@ -87,12 +87,6 @@ roles:
       - conditions:
           - type: rating
             value: ADM
-  - id: 714655179974115369
-    name: Mentor
-    criteria:
-      - conditions:
-          - type: facility_role
-            value: ZSE:MTR
   - id: 714655211418943519
     name: VATUSA Staff
     criteria:
@@ -101,9 +95,6 @@ roles:
   - id: 714638814139908166
     name: Training Staff
     criteria:
-      - conditions:
-          - type: facility_role
-            value: ZSE:MTR
       - conditions:
           - type: facility_role
             value: ZSE:INS
