@@ -114,18 +114,18 @@ roles:
       - conditions:
           - type: facility_role
             value: HCF:TA
-  - id: 769347549667917900
-    name: HCF Staff
-    criteria:
-      - conditions:
-          - type: facility_role
-            value: HCF:FE
-      - conditions:
-          - type: facility_role
-            value: HCF:WM
-      - conditions:
-          - type: facility_role
-            value: HCF:EC
+ # - id: 769347549667917900
+ #   name: HCF Staff
+ #   criteria:
+ #     - conditions:
+ #          - type: facility_role
+ #           value: HCF:FE
+ #     - conditions:
+#        - type: facility_role
+#            value: HCF:WM
+#      - conditions:
+#          - type: facility_role
+#            value: HCF:EC
   # 1151981811895898175 - Assistant Facility Engineer (Facility Team)
   - id: 1151981135996407900
     name: Training Staff
