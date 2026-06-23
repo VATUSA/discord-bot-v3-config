@@ -35,6 +35,6 @@ jobs:
           cd gitops # Move into the checked out repository
           git config --global user.email "vatusa6@vatusa.net"
           git config --global user.name "VATUSA6"
-          git add current/discord-bot-v3/configmap.yaml
+          git add current/base/discord-bot-v3/configmap.yaml
           git commit -m "Update configmap.yaml from generator"
           git push origin main
