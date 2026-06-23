@@ -27,7 +27,7 @@ jobs:
       # Update the ConfigMap (Adapt paths as needed)
       - name: Update ConfigMap
         run: |
-          cp manifest/configmap.yaml $GITHUB_WORKSPACE/gitops/current/discord-bot-v3/configmap.yaml
+          cp manifest/configmap.yaml gitops/current/discord-bot-v3/configmap.yaml
 
       # Commit and Push to the Target Repository
       - name: Commit and Push Changes
