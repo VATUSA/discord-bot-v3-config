@@ -69,6 +69,11 @@ roles:
             value: I1
           - type: in_division
             value: true
+      - conditions:
+          - type: role
+            value: INS
+          - type: in_division
+            value: true
   - id: 918659567460696075
     name: Instructor 3 (Visitor)
     criteria:
