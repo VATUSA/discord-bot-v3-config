@@ -102,7 +102,7 @@ roles:
           - type: facility_role
             value: ZID:FE
   - id: 1296502514656481382
-    name: Tech Team 
+    name: Tech Team
     criteria:
       - conditions:
           - type: facility_role
@@ -139,19 +139,24 @@ roles:
           - type: home_or_visit
             value: ZID
   - id: 1544793606068506694
-    name: Neighbooring Controllers
+    name: Neighboring Controllers
     criteria:
       - conditions:
           - type: home_or_visit
             value: ZME
+      - conditions:
           - type: home_or_visit
             value: ZDC
+      - conditions:
           - type: home_or_visit
             value: ZAU
+      - conditions:
           - type: home_or_visit
             value: ZOB
+      - conditions:
           - type: home_or_visit
             value: ZTL
+      - conditions:
           - type: home_or_visit
             value: ZKC
   - id: 1544788828534079529
