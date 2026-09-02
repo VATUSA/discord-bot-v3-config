@@ -4,7 +4,7 @@ active: true
 description: Indy Center
 facility: ZID
 name_format_type: first_last
-title_type: local
+title_type: none
 roles:
   - id: 896858108054368298
     name: Observer
@@ -77,6 +77,36 @@ roles:
     criteria:
       - conditions:
           - type: division_staff
+  - id: 1300575634296410164
+    name: Senior Staff
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZID:TA
+      - conditions:
+          - type: facility_role
+            value: ZID:ATM
+      - conditions:
+          - type: facility_role
+            value: ZID:DATM
+  - id: 1296503795429150835
+    name: Events Team
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZID:EC
+  - id: 1148442325689835540
+    name: Facility Working Group
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZID:FE
+  - id: 1296502514656481382
+    name: Tech Team 
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZID:WM
   - id: 477496066590375947
     name: Training Staff
     criteria:
@@ -106,11 +136,144 @@ roles:
     name: Air Traffic Controller
     criteria:
       - conditions:
-          - type: home
+          - type: home_or_visit
             value: ZID
+  - id: 1544793606068506694
+    name: Neighbooring Controllers
+    criteria:
       - conditions:
-          - type: visit
-            value: ZID
+          - type: home_or_visit
+            value: ZME
+          - type: home_or_visit
+            value: ZDC
+          - type: home_or_visit
+            value: ZAU
+          - type: home_or_visit
+            value: ZOB
+          - type: home_or_visit
+            value: ZTL
+          - type: home_or_visit
+            value: ZKC
+  - id: 1544788828534079529
+    name: Neighboring Senior Staff
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZME:ATM
+      - conditions:
+          - type: facility_role
+            value: ZKC:ATM
+      - conditions:
+          - type: facility_role
+            value: ZTL:ATM
+      - conditions:
+          - type: facility_role
+            value: ZDC:ATM
+      - conditions:
+          - type: facility_role
+            value: ZOB:ATM
+      - conditions:
+          - type: facility_role
+            value: ZAU:ATM
+      - conditions:
+          - type: facility_role
+            value: ZME:DATM
+      - conditions:
+          - type: facility_role
+            value: ZKC:DATM
+      - conditions:
+          - type: facility_role
+            value: ZTL:DATM
+      - conditions:
+          - type: facility_role
+            value: ZDC:DATM
+      - conditions:
+          - type: facility_role
+            value: ZOB:DATM
+      - conditions:
+          - type: facility_role
+            value: ZAU:DATM
+      - conditions:
+          - type: facility_role
+            value: ZME:TA
+      - conditions:
+          - type: facility_role
+            value: ZKC:TA
+      - conditions:
+          - type: facility_role
+            value: ZTL:TA
+      - conditions:
+          - type: facility_role
+            value: ZDC:TA
+      - conditions:
+          - type: facility_role
+            value: ZOB:TA
+      - conditions:
+          - type: facility_role
+            value: ZAU:TA
+  - id: 1544788164969758822
+    name: Neighboring Events Coordinators
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZME:EC
+      - conditions:
+          - type: facility_role
+            value: ZKC:EC
+      - conditions:
+          - type: facility_role
+            value: ZTL:EC
+      - conditions:
+          - type: facility_role
+            value: ZDC:EC
+      - conditions:
+          - type: facility_role
+            value: ZOB:EC
+      - conditions:
+          - type: facility_role
+            value: ZAU:EC
+  - id: 1544788395966992506
+    name: Neighboring Facility Engineers
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZME:FE
+      - conditions:
+          - type: facility_role
+            value: ZKC:FE
+      - conditions:
+          - type: facility_role
+            value: ZTL:FE
+      - conditions:
+          - type: facility_role
+            value: ZDC:FE
+      - conditions:
+          - type: facility_role
+            value: ZOB:FE
+      - conditions:
+          - type: facility_role
+            value: ZAU:FE
+  - id: 1544788466863317124
+    name: Neighboring Webmasters
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: ZME:WM
+      - conditions:
+          - type: facility_role
+            value: ZKC:WM
+      - conditions:
+          - type: facility_role
+            value: ZTL:WM
+      - conditions:
+          - type: facility_role
+            value: ZDC:WM
+      - conditions:
+          - type: facility_role
+            value: ZOB:WM
+      - conditions:
+          - type: facility_role
+            value: ZAU:WM
   - id: 1125403438545641564
     name: Member
     criteria:
