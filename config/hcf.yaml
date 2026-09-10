@@ -114,19 +114,36 @@ roles:
       - conditions:
           - type: facility_role
             value: HCF:TA
- # - id: 769347549667917900
- #   name: HCF Staff
- #   criteria:
- #     - conditions:
- #          - type: facility_role
- #           value: HCF:FE
- #     - conditions:
-#        - type: facility_role
-#            value: HCF:WM
-#      - conditions:
-#          - type: facility_role
-#            value: HCF:EC
-  # 1151981811895898175 - Assistant Facility Engineer (Facility Team)
+  - id: 769347549667917900
+    name: HCF Staff
+    criteria:
+      - conditions:
+           - type: facility_role
+             value: HCF:FE:POC
+      - conditions:
+          - type: facility_role
+            value: HCF:WM:POC
+      - conditions:
+          - type: facility_role
+            value: HCF:EC:POC
+  - id: 1151981811895898175
+    name: Facilities Team
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: HCF:FE
+  - id: 769347549659922466
+    name: Web Team
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: HCF:WM
+  - id: 769347549659922467
+    name: Events Team
+    criteria:
+      - conditions:
+          - type: facility_role
+            value: HCF:EC
   - id: 1151981135996407900
     name: Training Staff
     criteria:
@@ -168,8 +185,6 @@ roles:
       - conditions:
           - type: facility_role
             value: HCF:MTR
-  # 769347549659922467 - Events Team
-  # 769347549659922466 - Webteam
 
   #
   # Division Staff
