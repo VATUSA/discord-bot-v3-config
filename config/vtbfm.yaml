@@ -1,1 +1,43 @@
-
+id: 1112229964050350132
+name: vTBFM
+active: true
+description: Vritual Time Based Flow Management 
+facility: ALL
+name_format_type: first_last
+title_type: division
+roles: 
+  - id: 1112232135013695599
+    name: ARTCC Staff
+    criteria:
+      - conditions:
+          - type: role
+            value: ATM
+      - conditions:
+          - type: role
+            value: DATM
+      - conditions:
+          - type: role
+            value: TA
+      - conditions:
+          - type: role
+            value: EC
+      - conditions:
+          - type: role
+            value: FE
+      - conditions:
+          - type: role
+            value: WM
+roles: 
+  - id: 1112232249358819371
+    name: Facility Engineer
+    criteria:
+      - conditions:
+          - type: role
+            value: EC
+roles: 
+  - id: 1112232222267809822
+    name: Training Staff
+    criteria:
+      - conditions:
+          - type: role
+            value: TA
