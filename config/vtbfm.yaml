@@ -36,7 +36,7 @@ roles:
             value: FE
 roles: 
   - id: 1112232222267809822
-    name: Training Staff
+    name: Training Admin
     criteria:
       - conditions:
           - type: role
