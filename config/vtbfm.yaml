@@ -33,7 +33,7 @@ roles:
     criteria:
       - conditions:
           - type: role
-            value: EC
+            value: FE
 roles: 
   - id: 1112232222267809822
     name: Training Staff
