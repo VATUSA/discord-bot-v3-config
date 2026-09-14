@@ -27,14 +27,12 @@ roles:
       - conditions:
           - type: role
             value: WM
-roles: 
   - id: 1112232249358819371
     name: Facility Engineer
     criteria:
       - conditions:
           - type: role
             value: FE
-roles: 
   - id: 1112232222267809822
     name: Training Admin
     criteria:
