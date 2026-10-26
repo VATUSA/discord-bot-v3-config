@@ -1,0 +1,123 @@
+# ZAN (Anchorage ARTCC) - migrated from adh/bot-v2 facilities/zan.yaml
+id: "1013148343712632912"
+name: ZAN
+active: true
+description: Anchorage ARTCC
+facility: ZAN
+# bot-v2 used first_last_initial_oi ("First L. - OI | TITLE"); v3 has no OI or
+# trailing-period support, so this renders "First L | TITLE".
+name_format_type: first_last_initial
+# bot-v2 only titled staff (highest of ATM..MTR/AEC/AFE/AWM). "local" titles the
+# six VATUSA facility POCs, and shows the rating (or "FAC rating") for everyone else.
+title_type: local
+roles:
+  - id: "1013148343771340813"
+    name: ZAN Senior Staff
+    criteria:
+      - name: ATM
+        conditions:
+          - type: facility_role
+            value: "ZAN:ATM"
+      - name: DATM
+        conditions:
+          - type: facility_role
+            value: "ZAN:DATM"
+      - name: TA
+        conditions:
+          - type: facility_role
+            value: "ZAN:TA"
+  - id: "1013148343771340812"
+    name: ZAN Staff
+    criteria:
+      - name: EC
+        conditions:
+          - type: facility_role
+            value: "ZAN:EC:POC"
+      - name: FE
+        conditions:
+          - type: facility_role
+            value: "ZAN:FE:POC"
+      - name: WM
+        conditions:
+          - type: facility_role
+            value: "ZAN:WM:POC"
+  # bot-v2's "events"/"facilities"/"web" assistant roles map to VATUSA EC/FE/WM
+  # role holders who are not the facility's POC.
+  - id: "1013148343771340811"
+    name: ZAN Assistance Staff
+    criteria:
+      - name: Assistant FE
+        conditions:
+          - type: facility_role
+            value: "ZAN:FE:TEAM"
+      - name: Assistant EC
+        conditions:
+          - type: facility_role
+            value: "ZAN:EC:TEAM"
+      - name: Assistant WM
+        conditions:
+          - type: facility_role
+            value: "ZAN:WM:TEAM"
+  - id: "1113130280757235834"
+    name: Training Team
+    criteria:
+      - name: Instructor
+        conditions:
+          - type: facility_role
+            value: "ZAN:INS"
+      - name: Mentor
+        conditions:
+          - type: facility_role
+            value: "ZAN:MTR"
+  - id: "1135762890608091149"
+    name: FE Team
+    criteria:
+      - name: Assistant FE
+        conditions:
+          - type: facility_role
+            value: "ZAN:FE:TEAM"
+  - id: "1013148343729393785"
+    name: Events Team
+    criteria:
+      - name: Assistant EC
+        conditions:
+          - type: facility_role
+            value: "ZAN:EC:TEAM"
+  - id: "1013148343750361115"
+    name: Instructors
+    criteria:
+      - name: Instructor
+        conditions:
+          - type: facility_role
+            value: "ZAN:INS"
+  - id: "1013148343750361114"
+    name: Mentors
+    criteria:
+      - name: Mentor
+        conditions:
+          - type: facility_role
+            value: "ZAN:MTR"
+  - id: "1013148343750361109"
+    name: ZAN Members
+    criteria:
+      - name: Home Controller
+        conditions:
+          - type: home
+            value: ZAN
+  - id: "1013148343750361108"
+    name: Visitors
+    criteria:
+      - name: Visiting Controller
+        conditions:
+          - type: visit
+            value: ZAN
+  - id: "1013148343729393783"
+    name: Pilot
+    criteria:
+      - name: Not home or visiting ZAN
+        conditions:
+          - type: home_or_visit
+            value: ZAN
+            invert: true
+  # "Unverified" (1121131087146524903) is intentionally omitted: v3 cannot match
+  # members without a linked VATUSA account. See review notes.
