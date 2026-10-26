@@ -1,6 +1,9 @@
 name: Generate and Update ConfigMap
 
-on: [push]
+on:
+  push:
+    branches: [main]
+    paths: ['config/**', 'generator/**', '.github/workflows/generate-configmap.yaml']
 
 jobs:
   push:
@@ -36,5 +39,6 @@ jobs:
           git config --global user.email "vatusa6@vatusa.net"
           git config --global user.name "VATUSA6"
           git add current/base/discord-bot-v3/configmap.yaml
+          git diff --cached --quiet && { echo "ConfigMap unchanged; nothing to push"; exit 0; }
           git commit -m "Update configmap.yaml from generator"
           git push origin main
