@@ -166,11 +166,11 @@ roles:
           - type: role
             value: ACE
   - id: 850535607587045406
-    name: Social Media Team
+    name: Marketing Team
     criteria:
       - conditions:
           - type: role
-            value: SMT
+            value: MT
   - id: 699664936686846052
     name: VATUSA Staff
     criteria:
