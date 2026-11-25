@@ -244,6 +244,15 @@ roles:
             value: ZLA:DATM
       - conditions:
           - type: facility_role
+            value: ZAB:ATM
+      - conditions:
+          - type: facility_role
+            value: ZAB:DATM
+  - id: 1147326570520903742
+    name: Northern Region ATM/DATM
+    criteria:
+      - conditions:
+          - type: facility_role
             value: ZLC:ATM
       - conditions:
           - type: facility_role
@@ -256,19 +265,25 @@ roles:
             value: ZDV:DATM
       - conditions:
           - type: facility_role
-            value: ZAB:ATM
-      - conditions:
-          - type: facility_role
-            value: ZAB:DATM
-  - id: 1147326570520903742
-    name: Central Region ATM/DATM
-    criteria:
-      - conditions:
-          - type: facility_role
             value: ZMP:ATM
       - conditions:
           - type: facility_role
             value: ZMP:DATM
+      - conditions:
+          - type: facility_role
+            value: ZAU:ATM
+      - conditions:
+          - type: facility_role
+            value: ZAU:DATM
+      - conditions:
+          - type: facility_role
+            value: ZID:ATM
+      - conditions:
+          - type: facility_role
+            value: ZID:DATM
+  - id: 1574951259272650882
+    name: Southern Region ATM/DATM
+    criteria:
       - conditions:
           - type: facility_role
             value: ZKC:ATM
@@ -289,22 +304,22 @@ roles:
             value: ZHU:DATM
       - conditions:
           - type: facility_role
-            value: ZAU:ATM
-      - conditions:
-          - type: facility_role
-            value: ZAU:DATM
-      - conditions:
-          - type: facility_role
             value: ZME:ATM
       - conditions:
           - type: facility_role
             value: ZME:DATM
       - conditions:
           - type: facility_role
-            value: ZID:ATM
+            value: ZMA:ATM
       - conditions:
           - type: facility_role
-            value: ZID:DATM
+            value: ZMA:DATM
+      - conditions:
+          - type: facility_role
+            value: ZJX:ATM
+      - conditions:
+          - type: facility_role
+            value: ZJX:DATM
   - id: 1147326616972841050
     name: Eastern Region ATM/DATM
     criteria:
@@ -338,16 +353,3 @@ roles:
       - conditions:
           - type: facility_role
             value: ZDC:DATM
-      - conditions:
-          - type: facility_role
-            value: ZJX:ATM
-      - conditions:
-          - type: facility_role
-            value: ZJX:DATM
-      - conditions:
-          - type: facility_role
-            value: ZMA:ATM
-      - conditions:
-          - type: facility_role
-            value: ZMA:DATM
-
